@@ -19,6 +19,7 @@ export default function App() {
         <Switch
           value={theme === "dark"}
           onValueChange={() => setTheme(theme === "light" ? "dark" : "light")}
+          style={{ marginTop: 50 }}
         />
         <Keyboard />
       </SafeAreaView>

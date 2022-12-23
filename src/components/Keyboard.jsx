@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, SafeAreaView } from "react-native";
 import React, { useState } from "react";
 import { Styles } from "../styles/GlobalStyles";
 import { myColors } from "../styles/Colors";
@@ -93,7 +93,7 @@ const Keyboard = () => {
   };
 
   return (
-    <View style={Styles.viewBottom}>
+    <SafeAreaView style={Styles.viewBottom}>
       <View
         style={{
           height: 120,
@@ -147,7 +147,7 @@ const Keyboard = () => {
         />
         <Button title="=" isBlue onPress={() => getResult()} />
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 
